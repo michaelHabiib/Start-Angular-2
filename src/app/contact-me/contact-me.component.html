@@ -1,0 +1,31 @@
+<div class="contact mt-5">
+  <div class="container text-center">
+        <div class="main-head mb-5 ">
+          <h2 class="fw-bold">contact us</h2>
+          <i class="fa fa-solid fa-star fs-2"></i>
+          <p class="fs-1 ">Try The Form Once With a Data and another Without Data</p>
+        </div>
+        <div class="main">
+          <input class="form-control" placeholder="Name" [(ngModel)]='name' required>
+          <input class="form-control" type="email" placeholder="Email addres" [(ngModel)]='mail' >
+          <input class="form-control" type="number" placeholder="phone number" [(ngModel)]='phone' required>
+          <textarea class="form-control" name="" id="" cols="30" rows="8" placeholder="massage" [(ngModel)]='massage' required></textarea>
+          <button class="btn btn-info" (click)="dataIn()">send</button>
+        </div>
+  </div>
+</div>
+
+
+
+
+<div class="pop-up2 collapse">
+  <div class="container text-center">
+    <h3 class="fs-1"> Hello {{name.split(" ")[0]}}</h3>
+    <p class="fs-2">please conform your data to contact you</p>
+    <p class="fs-2"> full Name : {{name}}</p>
+    <p class="fs-2"> Phone Number : {{phone.toString()}}</p>
+    <p class="fs-2"> Email : {{mail}}</p>
+    <p class="fs-2"> massage : {{massage}}</p>
+    <button class="btn btn-info mx-auto" (click)="close()">confrom</button>
+  </div>
+</div>

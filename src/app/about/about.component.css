@@ -1,0 +1,26 @@
+.about{
+  background-color: #1abc9c;
+}
+.about .container h2 {
+  position: relative;
+}
+
+.about .container h2::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  bottom: -24px;
+  left: 55%;
+  background-color: white;
+}
+
+.about .container h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  bottom: -24px;
+  right: 55%;
+  background-color: white;
+}

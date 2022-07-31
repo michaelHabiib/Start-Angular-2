@@ -1,0 +1,61 @@
+<div class="porto mt-5">
+  <div class="container text-center">
+    <div class="main-head mb-5">
+      <h2 class="fw-bold">portfolio</h2>
+      <i class="fa fa-solid fa-star fs-2"></i>
+    </div>
+    <div class="row justify-content-center">
+      <p class="fs-1 text-dark ">click on img</p>
+      <div class="col-md-6 col-lg-4 px-0 mb-2" >
+        <div class="image mx-3" (click)="createPopup(0)">
+          <img src="../../assets/cabin.png" alt="" class="img-fluid ">
+          <i class="fa fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 px-0 mb-2" >
+        <div class="image mx-3" (click)="createPopup(1)">
+          <img src="../../assets/cake.png" alt="" class="img-fluid">
+          <i class="fa fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 px-0 mb-2" >
+        <div class="image mx-3" (click)="createPopup(2)">
+          <img src="../../assets/circus.png" alt="" class="img-fluid">
+          <i class="fa fa-solid fa-plus"></i>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4 px-0 mb-2">
+        <div class="image mx-3" (click)="createPopup(3)">
+          <img src="../../assets/game.png" alt="" class="img-fluid">
+          <i class="fa fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 px-0 mb-2" >
+        <div class="image mx-3" (click)="createPopup(4)">
+          <img src="../../assets/safe.png" alt="" class="img-fluid ">
+          <i class="fa fa-solid fa-plus"></i>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 px-0 mb-2" >
+        <div class="image mx-3" (click)="createPopup(5)">
+          <img src="../../assets/submarine.png" alt="" class="img-fluid">
+          <i class="fa fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="f"></div>
+<div class="pop-up container bg-white text-center collapse ">
+    <div class="main-head mb-5">
+      <h2 class="fw-bold">{{arr[x].picName}}</h2>
+      <i class="fa fa-solid fa-star fs-2"></i>
+    </div>
+    <button type="button" class="btn-close p-3 fs-1 fw-bold" aria-label="Close" (click)="closeWindow()"></button>
+    <img [src]="arr[x].picUrl" alt="" class="img-fluid" style="width: 400px;">
+    <p class="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni atque fugit eligendi eum minima vitae nulla doloribus esse.</p>
+    <button class="btn btn-info p-2 text-white" (click)="closeWindow()">close window</button>
+</div>
